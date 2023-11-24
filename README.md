@@ -11,3 +11,4 @@ er
 - poi ci creiamo php artisan make:controller PageController
 - creo la pagina contatti
 - stampo quanti prodotti ci sono alla home
+- l'elenco di tutti i fumetti sta nell'index
