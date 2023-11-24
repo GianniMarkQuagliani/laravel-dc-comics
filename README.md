@@ -5,3 +5,4 @@ er
 - ora creiamo il model php artisan  make:model Comic
 - importo comics sul seeder
 - testiamo lo seeder php artisan db:seed --class=ComicsTableSeeder
+- poi compilo lo seeder per bene e questo e il punto di partenza

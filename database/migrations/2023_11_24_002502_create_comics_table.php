@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title', 255);
             $table->text('description')->nullable();
-            $table->string('thumb', 255)->nullable();
+            $table->text('thumb')->nullable();
             $table->string('price', 20)->nullable();
             $table->string('series', 100)->nullable();
             $table->date('sale_date')->nullable();
@@ -25,7 +25,6 @@ return new class extends Migration
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
