@@ -13,6 +13,7 @@
 <body>
 
     <div class="container my-5">
+        @include('partials.header')
         <main>
             @yield('content')
         </main>

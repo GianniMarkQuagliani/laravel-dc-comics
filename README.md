@@ -7,3 +7,5 @@ er
 - testiamo lo seeder php artisan db:seed --class=ComicsTableSeeder
 - poi compilo lo seeder per bene e questo e il punto di partenza
 - facciamo un resource controller php artisan make:controller ComicController -r
+- modifico we.php e ci metto la resource e vedo se funziona con il comando php artisan route:list
+- poi ci creiamo php artisan make:controller PageController

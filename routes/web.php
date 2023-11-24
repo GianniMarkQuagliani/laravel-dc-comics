@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ComicController;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::resource('comics', ComicController::class);
+
+Route::get('/', [PageController::class, 'index'])->name('home');
+
+Route::get('/contatti', [PageController::class, 'index'])->name('contacts');
