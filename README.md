@@ -6,3 +6,4 @@ er
 - importo comics sul seeder
 - testiamo lo seeder php artisan db:seed --class=ComicsTableSeeder
 - poi compilo lo seeder per bene e questo e il punto di partenza
+- facciamo un resource controller php artisan make:controller ComicController -r
