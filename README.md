@@ -9,3 +9,5 @@ er
 - facciamo un resource controller php artisan make:controller ComicController -r
 - modifico we.php e ci metto la resource e vedo se funziona con il comando php artisan route:list
 - poi ci creiamo php artisan make:controller PageController
+- creo la pagina contatti
+- stampo quanti prodotti ci sono alla home
