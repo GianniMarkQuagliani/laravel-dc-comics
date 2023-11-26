@@ -75,6 +75,7 @@ class ComicController extends Controller
         return view('comics.edit', compact('comic'));
     }
 
+
     /**
      * Update the specified resource in storage.
      *
