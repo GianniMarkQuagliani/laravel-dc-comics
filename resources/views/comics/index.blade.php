@@ -2,6 +2,11 @@
 
 @section('content')
     <h1>Lista fumetti</h1>
+    @if(session('deleted'))
+    <div class="alert alert-success" role="alert">
+        {{ session('deleted') }}
+    </div>
+    @endif
     <table class="table">
         <thead>
           <tr>
@@ -30,8 +35,9 @@
               <td>{{ $comic->series }}</td>
               <td>
                 <a class="btn btn-success" href="{{ route('comics.show', $comic->id) }}"><i class="fa-regular fa-eye"></i></a>
-                <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}"><i class="fa-solid fa-penicl"></i></a>
-              </td>
+                <a class="btn btn-warning" href="{{ route('comics.edit', $comic->id) }}"><i class="fa-solid fa-pencil"></i></a>
+                @include('partials.formDelete')
+            </td>
             </tr>
           @endforeach
         </tbody>
